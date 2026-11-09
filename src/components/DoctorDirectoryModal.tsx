@@ -27,7 +27,7 @@ export const DoctorDirectoryModal: React.FC<DoctorDirectoryModalProps> = ({
       reviewsCount: 142,
       location: 'Clinique Vitalia - Riviera Palmeraie (Pavillon A)',
       nextSlot: 'Aujourd\'hui à 14h30',
-      photo: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80'
+      photo: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=75&fm=webp'
     },
     {
       id: 'doc-2',
@@ -38,7 +38,7 @@ export const DoctorDirectoryModal: React.FC<DoctorDirectoryModalProps> = ({
       reviewsCount: 198,
       location: 'Pôle Chirurgical Vitalia - Cocody',
       nextSlot: 'Demain à 10h00',
-      photo: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80'
+      photo: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=75&fm=webp'
     },
     {
       id: 'doc-3',
@@ -49,7 +49,7 @@ export const DoctorDirectoryModal: React.FC<DoctorDirectoryModalProps> = ({
       reviewsCount: 110,
       location: 'Centre Médical Vitalia - Palmeraie',
       nextSlot: 'Aujourd\'hui à 16h15',
-      photo: 'https://images.unsplash.com/photo-1594824813626-d922bc3086eb?auto=format&fit=crop&w=600&q=80'
+      photo: 'https://images.unsplash.com/photo-1594824813626-d922bc3086eb?auto=format&fit=crop&w=200&q=75&fm=webp'
     },
     {
       id: 'doc-4',
@@ -60,7 +60,7 @@ export const DoctorDirectoryModal: React.FC<DoctorDirectoryModalProps> = ({
       reviewsCount: 88,
       location: 'Clinique Vitalia - Pavillon B',
       nextSlot: 'Jeudi à 09h30',
-      photo: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80'
+      photo: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=200&q=75&fm=webp'
     }
   ];
 
@@ -140,6 +140,10 @@ export const DoctorDirectoryModal: React.FC<DoctorDirectoryModalProps> = ({
                   <img
                     src={doc.photo}
                     alt={doc.name}
+                    width={48}
+                    height={48}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />

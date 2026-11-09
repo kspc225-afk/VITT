@@ -26,7 +26,7 @@ const SPECIALISTS: Specialist[] = [
     experience: '15 Ans d\'Expérience',
     consultations: '1 200+ Consultations',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=75&fm=webp'
   },
   {
     id: 'dr-aminata-toure',
@@ -35,7 +35,7 @@ const SPECIALISTS: Specialist[] = [
     experience: '12 Ans d\'Expérience',
     consultations: '1 500+ Consultations',
     rating: '4.8',
-    image: 'https://images.unsplash.com/photo-1594824813626-d922bc3086eb?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1594824813626-d922bc3086eb?auto=format&fit=crop&w=500&q=75&fm=webp'
   },
   {
     id: 'dr-koffi-ndri',
@@ -44,7 +44,7 @@ const SPECIALISTS: Specialist[] = [
     experience: '17 Ans d\'Expérience',
     consultations: '1 900+ Consultations',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=500&q=75&fm=webp'
   },
   {
     id: 'dr-marie-josee-konan',
@@ -53,7 +53,7 @@ const SPECIALISTS: Specialist[] = [
     experience: '20 Ans d\'Expérience',
     consultations: '2 300+ Consultations',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=75&fm=webp'
   },
   {
     id: 'dr-bakary-traore',
@@ -62,7 +62,7 @@ const SPECIALISTS: Specialist[] = [
     experience: '14 Ans d\'Expérience',
     consultations: '1 600+ Consultations',
     rating: '4.8',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=75&fm=webp'
   }
 ];
 
@@ -183,6 +183,7 @@ export const AllOnFourSection: React.FC<AllOnFourSectionProps> = ({
                   alt={spec.name}
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-104"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
 

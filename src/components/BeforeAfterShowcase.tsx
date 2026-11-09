@@ -82,7 +82,7 @@ const PATIENT_REVIEWS: PatientReview[] = [
     name: 'AÏCHA KONÉ',
     quote: '"J\'ai pu consulter le médecin du sport et la kinésithérapeute en un seul rendez-vous à la clinique. Leur coordination a accéléré ma guérison de façon spectaculaire."',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=200&q=75&fm=webp',
     accentGradient: 'from-amber-500/20 via-pink-500/20 to-sky-500/30'
   },
   {
@@ -90,7 +90,7 @@ const PATIENT_REVIEWS: PatientReview[] = [
     name: 'KOUAMÉ SYLVAIN',
     quote: '"Voir un spécialiste des articulations et réaliser le bilan d\'imagerie le jour même a été d\'un confort inestimable. Leur bienveillance a rendu ma convalescence très sereine."',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=75&fm=webp',
     accentGradient: 'from-amber-600/30 via-orange-500/20 to-yellow-500/20'
   },
   {
@@ -98,7 +98,7 @@ const PATIENT_REVIEWS: PatientReview[] = [
     name: 'FATIMA DIALLO',
     quote: '"J\'ai rencontré le chirurgien orthopédiste et le rééducateur en une seule session. Le protocole coordonné m\'a permis de reprendre mon travail bien plus vite que prévu."',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=75&fm=webp',
     accentGradient: 'from-amber-600/30 via-stone-500/20 to-amber-500/20'
   },
   {
@@ -106,7 +106,7 @@ const PATIENT_REVIEWS: PatientReview[] = [
     name: 'DRISSA BAMBA',
     quote: '"Zéro temps d\'attente, une équipe médicale très à l\'écoute et des diagnostics d\'une clarté exemplaire. La meilleure expérience de soins vécue à Abidjan."',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=75&fm=webp',
     accentGradient: 'from-stone-500/30 via-amber-500/20 to-stone-400/20'
   },
   {
@@ -114,7 +114,7 @@ const PATIENT_REVIEWS: PatientReview[] = [
     name: 'MARIE-ESTELLE YAO',
     quote: '"L\'inscription en ligne est d\'une fluidité parfaite, les cabinets de consultation sont intimes et confortables. Un standard hospitalier moderne et rassurant."',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=75&fm=webp',
     accentGradient: 'from-rose-500/20 via-amber-500/20 to-indigo-500/30'
   }
 ];
@@ -251,6 +251,7 @@ export const BeforeAfterShowcase: React.FC<BeforeAfterShowcaseProps> = () => {
                       alt={review.name}
                       className="w-full h-full object-cover object-center filter contrast-[1.08] saturate-[1.2]"
                       loading="lazy"
+                      decoding="async"
                     />
                     {/* Filtre d'éclairage artistique vibrant (ambre/cyan/rose) */}
                     <div className={`absolute inset-0 bg-gradient-to-tr ${review.accentGradient} mix-blend-color pointer-events-none`} />

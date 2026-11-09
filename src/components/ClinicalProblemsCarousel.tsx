@@ -285,7 +285,7 @@ export const ClinicalProblemsCarousel: React.FC<ClinicalProblemsCarouselProps> =
                 <div 
                   className="absolute inset-0 bg-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   style={{
-                    backgroundImage: `url('/assets/aistudio/image_cddeba72.png')`,
+                    backgroundImage: `url('/assets/aistudio/image_cddeba72.webp')`,
                     backgroundPosition: card.bgPos,
                     backgroundSize: '430% auto'
                   }}

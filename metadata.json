@@ -1,6 +1,6 @@
 {
-  "name": "Clinique Dr. Bocharov | Chirurgie Maxillo-Faciale & Implantologie",
-  "description": "Site officiel de la clinique de chirurgie maxillo-faciale et implantologie de pointe du Dr. Bocharov. Réhabilitation All-on-4®, chirurgie guidée 3D et soins dentaires d'excellence.",
+  "name": "Clinique Vitalia | Établissement Médical Privé Cocody Riviera Palmeraie",
+  "description": "Site officiel de la Clinique Vitalia, établissement médical privé d'excellence situé à Abidjan, commune de Cocody, quartier Riviera Palmeraie. Consultations spécialisées, chirurgie de pointe et soins personnalisés.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

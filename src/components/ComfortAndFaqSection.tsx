@@ -25,7 +25,7 @@ const GALLERY_ITEMS: GalleryCard[] = [
   {
     id: 'card-1',
     type: 'image',
-    image: '/assets/aistudio/image_2b30b815.png',
+    image: '/assets/aistudio/image_2b30b815.webp',
     alt: 'Médecin spécialiste de la Clinique Vitalia souriante en consultation'
   },
   {
@@ -37,19 +37,19 @@ const GALLERY_ITEMS: GalleryCard[] = [
   {
     id: 'card-3',
     type: 'image',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=75&fm=webp',
     alt: 'Médecin praticien de la Clinique Vitalia à Abidjan'
   },
   {
     id: 'card-4',
     type: 'image',
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=500&q=75&fm=webp',
     alt: 'Patiente satisfaite et épanouie après ses soins'
   },
   {
     id: 'card-5',
     type: 'image',
-    image: '/src/assets/images/sterile_surgical_suite_1793831504177.jpg',
+    image: '/src/assets/images/sterile_surgical_suite_1793831504177.webp',
     alt: 'Plateau chirurgical de haute sécurité'
   }
 ];
@@ -208,6 +208,7 @@ export const ComfortAndFaqSection: React.FC<ComfortAndFaqSectionProps> = ({
                     alt={item.alt || 'Clinic interior'}
                     className="w-full h-full object-cover object-center filter contrast-[1.03] transition-transform duration-500 group-hover:scale-104"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
               );

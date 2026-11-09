@@ -177,8 +177,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     timeline: "Sourire fixe en 24h, stabilisation définitive à 3 mois",
     beforeLabel: "Avant : Édentement & prothèse instable",
     afterLabel: "Après : Arcade fixe en céramique zircone",
-    beforeImgUrl: "/assets/aistudio/image_e41f658e.png",
-    afterImgUrl: "/assets/aistudio/image_e41f658e.png"
+    beforeImgUrl: "/assets/aistudio/image_e41f658e.webp",
+    afterImgUrl: "/assets/aistudio/image_e41f658e.webp"
   },
   {
     id: "case-incisive-esthetique",
@@ -190,8 +190,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     timeline: "Couronne provisoire le jour même, couronne définitive à 8 semaines",
     beforeLabel: "Avant : Dent fracturée & asymétrie",
     afterLabel: "Après : Intégration naturelle invisible",
-    beforeImgUrl: "/assets/aistudio/image_e41f658e.png",
-    afterImgUrl: "/assets/aistudio/image_e41f658e.png"
+    beforeImgUrl: "/assets/aistudio/image_e41f658e.webp",
+    afterImgUrl: "/assets/aistudio/image_e41f658e.webp"
   }
 ];
 

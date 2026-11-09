@@ -39,7 +39,7 @@ const STEPS: StepData[] = [
       { name: 'Endocrinologie', badge: 'Métabolisme' },
       { name: 'Gastro-entérologie', badge: 'Digestif' }
     ],
-    imageSrc: '/assets/aistudio/image_cddeba72.png',
+    imageSrc: '/assets/aistudio/image_cddeba72.webp',
     imageAlt: 'Consultations de médecine interne et soins coordonnés',
     bookingMotive: 'Consultation Médecine Interne & Générale'
   },
@@ -56,7 +56,7 @@ const STEPS: StepData[] = [
       { name: 'Coelio-chirurgie', badge: 'Mini-invasif' },
       { name: 'Chirurgie Digestive', badge: 'Spécialisée' }
     ],
-    imageSrc: '/assets/aistudio/image_2b30b815.png',
+    imageSrc: '/assets/aistudio/image_2b30b815.webp',
     imageAlt: 'Bloc chirurgical et chirurgiens d\'excellence',
     bookingMotive: 'Consultation Chirurgie Générale'
   },
@@ -73,7 +73,7 @@ const STEPS: StepData[] = [
       { name: 'ECG d\'effort', badge: 'Exploration fonctionnelle' },
       { name: 'Rythmologie', badge: 'Surveillance' }
     ],
-    imageSrc: '/assets/aistudio/image_d24e758d.png',
+    imageSrc: '/assets/aistudio/image_d24e758d.webp',
     imageAlt: 'Explorations cardiologiques et respiratoires',
     bookingMotive: 'Bilan Cardiologie & Vaisseaux'
   },
@@ -90,7 +90,7 @@ const STEPS: StepData[] = [
       { name: 'Imagerie Rétinienne 3D', badge: 'Scan maculaire' },
       { name: 'Chirurgie Réfractive', badge: 'Laser' }
     ],
-    imageSrc: '/assets/aistudio/image_cddeba72.png',
+    imageSrc: '/assets/aistudio/image_cddeba72.webp',
     imageAlt: 'Plateau ophtalmologique et santé oculaire',
     bookingMotive: 'Consultation Ophtalmologie & Réfraction'
   },
@@ -107,7 +107,7 @@ const STEPS: StepData[] = [
       { name: 'Chirurgie Cutanée', badge: 'Gestes ambulatoires' },
       { name: 'Allergologie Cutanée', badge: 'Tests cutanés' }
     ],
-    imageSrc: '/assets/aistudio/image_d24e758d.png',
+    imageSrc: '/assets/aistudio/image_d24e758d.webp',
     imageAlt: 'Cabinet de dermatologie médicale et chirurgicale',
     bookingMotive: 'Consultation Dermatologie & Dépistage'
   },
@@ -124,7 +124,7 @@ const STEPS: StepData[] = [
       { name: 'Calendrier Vaccinal', badge: 'Prévention' },
       { name: 'Urgences Pédiatriques', badge: 'Accueil rapide' }
     ],
-    imageSrc: '/assets/aistudio/image_2b30b815.png',
+    imageSrc: '/assets/aistudio/image_2b30b815.webp',
     imageAlt: 'Soins pédiatriques et suivi de l\'enfant',
     bookingMotive: 'Consultation Pédiatrie & Nourrisson'
   },
@@ -141,7 +141,7 @@ const STEPS: StepData[] = [
       { name: 'Chirurgie du Genou & Hanche', badge: 'Prothèses mini-invasives' },
       { name: 'Pathologies Rachidiennes', badge: 'Colonne vertébrale' }
     ],
-    imageSrc: '/assets/aistudio/image_e41f658e.png',
+    imageSrc: '/assets/aistudio/image_e41f658e.webp',
     imageAlt: 'Chirurgie orthopédique et traumatologie',
     bookingMotive: 'Consultation Chirurgie Orthopédique'
   },
@@ -158,7 +158,7 @@ const STEPS: StepData[] = [
       { name: 'Bilans Cognitifs', badge: 'Mémoire & Attention' },
       { name: 'Explorations Nerveuses', badge: 'EMG' }
     ],
-    imageSrc: '/assets/aistudio/image_d24e758d.png',
+    imageSrc: '/assets/aistudio/image_d24e758d.webp',
     imageAlt: 'Plateau neurologique et explorations fonctionnelles',
     bookingMotive: 'Consultation Neurologie Clinique'
   },
@@ -175,7 +175,7 @@ const STEPS: StepData[] = [
       { name: 'Santé Féminine', badge: 'Prévention' },
       { name: 'Chirurgie Gynécologique', badge: 'Ambulatoire' }
     ],
-    imageSrc: '/assets/aistudio/image_cddeba72.png',
+    imageSrc: '/assets/aistudio/image_cddeba72.webp',
     imageAlt: 'Pôle gynécologique et santé de la femme',
     bookingMotive: 'Consultation Gynécologie & Obstétrique'
   },
@@ -192,7 +192,7 @@ const STEPS: StepData[] = [
       { name: 'Diagnostic Sommeil', badge: 'Apnée du sommeil' },
       { name: 'Allergologie Respiratoire', badge: 'Dépistage' }
     ],
-    imageSrc: '/assets/aistudio/image_2b30b815.png',
+    imageSrc: '/assets/aistudio/image_2b30b815.webp',
     imageAlt: 'Pneumologie et explorations respiratoires',
     bookingMotive: 'Consultation Pneumologie & Sommeil'
   }
@@ -445,6 +445,8 @@ export const ImplantologyExplorer: React.FC<PinnedScrollSectionProps> = ({
                     <img
                       src={step.imageSrc}
                       alt={step.imageAlt}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-center filter contrast-[1.02]"
                       referrerPolicy="no-referrer"
                     />
